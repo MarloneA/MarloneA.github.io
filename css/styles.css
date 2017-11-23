@@ -34,6 +34,9 @@ p{
     font-size:16px;
 }
 
+button{
+    background: rgb(236, 236, 236);
+}
 
 button:hover{
     opacity: 0.5;
@@ -58,7 +61,7 @@ li:hover{
 
 .main-page {
 
-    height:100%;
+    height:125%;
     width: 100%;
     
     padding: 20px;
@@ -262,19 +265,25 @@ li:hover{
 
 .barner {
     width: 100%;
-    height: 200px;
+    
     background: azure;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
     
 }
 
 .featurete {
     width: 100%;
-    height: 465px;
+    
     background: #007bff;
+    padding: 70px;
+    color: azure;
 }
 
 .main-features {
-    height: 862px;
     width: 100%;
     background: white;
 }
@@ -345,4 +354,50 @@ nav input{
     width:100%;
     background: #020731;
     padding: 10px;
+}
+
+.sub-featurate {
+    text-align: center;
+}
+
+.circle {
+    height: 120px;
+    width: 120px;
+    background: green;
+    margin: auto;
+    border-radius: 100%;
+    margin-bottom: 15px;
+}
+
+.learn-more {
+    margin: auto;
+}
+
+.featurate-header {
+    text-align: center;
+    color: azure;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.showcase {
+    background: yellow;
+    border-left: 2px solid black;
+    margin: 30px;
+    
+}
+
+.images {
+    width: 920px;
+    margin: auto;
+}
+
+.main-features-heading {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.edit {
+    float: right;
 }
