@@ -19,7 +19,7 @@
 
 <body> 
     
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <nav class="container navbar navbar-toggleable-md navbar-light bg-faded">
           
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,9 +28,7 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="events.html" target="_blank">Home <span class="sr-only">(current)</span></a>
-              </li>
+              
               <li class="nav-item">
                 <a class="nav-link" href="login.html" target="_blank" >login</a>
               </li>
@@ -46,14 +44,10 @@
                 <a class="nav-link" href="create-events.html" target="_blank" >New Event</a>
               </li>
                 
-            
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            
           </div>
-</nav>
+    </nav>
    
     <div class="wrap container">
         
@@ -86,7 +80,77 @@
 
             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 right">
                 <div class="events">
-                    <button class="edit btn btn-sm">Edit</button>
+                    <button class="edit btn btn-sm" data-toggle="modal" data-target="#myModal">Edit</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+                         aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <button type="button" class="close" 
+                                       data-dismiss="modal">
+                                           <span aria-hidden="true">&times;</span>
+                                           <span class="sr-only">Close</span>
+                                    </button>
+                                    <h4 class=" modal-heading modal-title" id="myModalLabel">
+                                        Edit event
+                                    </h4>
+                                </div>
+                                
+                                <!-- Modal Body -->
+                                <div class="modal-body">
+                                    
+                                    <form class="form-horizontal" role="form">
+                                      <div class="form-group">
+                                    
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control" 
+                                            id="inputText" placeholder="Title"/>
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                    
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control" 
+                                            id="inputText" placeholder="Category"/>
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                    
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control" 
+                                            id="inputText" placeholder="Location"/>
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <textarea class="txt-ar form-control" id="describe" rows="3">Event description</textarea>
+                                      </div>
+                                      
+                                      
+                                      
+                                    </form>   
+                                    
+                                </div>
+                                
+                                <!-- Modal Footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default"
+                                            data-dismiss="modal">
+                                                Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">
+                                        Save changes
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <h4>Title of Event</h4>
                     <h6>Date of event</h6>
                     <p>This project is broken down into 4 challenges whose completion would contribute greatly to your learning towards becoming a full-stack developer. Upon completion, you would have built a world-class full-stack (frontend and backend)  Python and JavaScript  application.
@@ -97,7 +161,77 @@
                 </div>
 
                 <div class="events">
-                    <button class="edit btn btn-sm">Edit</button>
+                    <button class="edit btn btn-sm" data-toggle="modal" data-target="#myModal">Edit</button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+                         aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <button type="button" class="close" 
+                                       data-dismiss="modal">
+                                           <span aria-hidden="true">&times;</span>
+                                           <span class="sr-only">Close</span>
+                                    </button>
+                                    <h4 class=" modal-heading modal-title" id="myModalLabel">
+                                        Edit event
+                                    </h4>
+                                </div>
+                                
+                                <!-- Modal Body -->
+                                <div class="modal-body">
+                                    
+                                    <form class="form-horizontal" role="form">
+                                      <div class="form-group">
+                                    
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control" 
+                                            id="inputText" placeholder="Title"/>
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                    
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control" 
+                                            id="inputText" placeholder="Category"/>
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                    
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control" 
+                                            id="inputText" placeholder="Location"/>
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <textarea class="txt-ar form-control" id="describe" rows="3">Event description</textarea>
+                                      </div>
+                                      
+                                      
+                                      
+                                    </form>   
+                                    
+                                </div>
+                                
+                                <!-- Modal Footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default"
+                                            data-dismiss="modal">
+                                                Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">
+                                        Save changes
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <h4>Title of Event</h4>
                     <h6>Date of event</h6>
                     <p>This project is broken down into 4 challenges whose completion would contribute greatly to your learning towards becoming a full-stack developer. Upon completion, you would have built a world-class full-stack (frontend and backend)  Python and JavaScript  application.
@@ -106,16 +240,86 @@
                     <h6>Date Created</h6>
                     <button class="btn btn-default btn-lg">RSVP</button>
                 </div>
+                
                 <div class="events">
-                    <button class="edit btn btn-sm">Edit</button>
+                    <button class="edit btn btn-sm" data-toggle="modal" data-target="#myModal">Edit</button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+                         aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <button type="button" class="close" 
+                                       data-dismiss="modal">
+                                           <span aria-hidden="true">&times;</span>
+                                           <span class="sr-only">Close</span>
+                                    </button>
+                                    <h4 class=" modal-heading modal-title" id="myModalLabel">
+                                        Edit event
+                                    </h4>
+                                </div>
+                                
+                                <!-- Modal Body -->
+                                <div class="modal-body">
+                                    
+                                    <form class="form-horizontal" role="form">
+                                      <div class="form-group">
+                                    
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control" 
+                                            id="inputText" placeholder="Title"/>
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                    
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control" 
+                                            id="inputText" placeholder="Category"/>
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                    
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control" 
+                                            id="inputText" placeholder="Location"/>
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <textarea class="txt-ar form-control" id="describe" rows="3">Event description</textarea>
+                                      </div>
+                                      
+                                      
+                                      
+                                    </form>   
+                                    
+                                </div>
+                                
+                                <!-- Modal Footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default"
+                                            data-dismiss="modal">
+                                                Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">
+                                        Save changes
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <h4>Title of Event</h4>
-                    <h6>date of event</h6>
+                    <h6>Date of event</h6>
                     <p>This project is broken down into 4 challenges whose completion would contribute greatly to your learning towards becoming a full-stack developer. Upon completion, you would have built a world-class full-stack (frontend and backend)  Python and JavaScript  application.
 
                     </p>
-
                     <h6>Date Created</h6>
-                    <button class=" btn btn-default btn-lg">RSVP</button>
+                    <button class="btn btn-default btn-lg">RSVP</button>
                 </div>
 
 

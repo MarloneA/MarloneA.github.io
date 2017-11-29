@@ -401,3 +401,12 @@ nav input{
 .edit {
     float: right;
 }
+.modal-heading{
+    text-align: center;
+    margin:auto;
+    margin-left: 10px;
+}
+.txt-ar{
+        width: 95%;
+    margin: auto;
+}
